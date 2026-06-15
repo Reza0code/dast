@@ -1036,3 +1036,16 @@ html[dir="ltr"] .language-menu {
     left: 0;
   }
 }
+
+/* Click-based language dropdown fix */
+.language-dropdown.open .language-menu {
+  display: block;
+}
+
+.language-menu {
+  top: 44px;
+}
+
+.language-dropdown {
+  padding-bottom: 10px;
+}
