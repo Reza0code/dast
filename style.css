@@ -856,3 +856,68 @@ footer {
     background: #eef5e8;
   }
 }
+
+/* Language switch */
+.language-switch {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-right: 18px;
+}
+
+.language-switch a {
+  text-decoration: none;
+  color: #1f6b3a;
+  background: #eef5e8;
+  border: 1px solid #dbe8da;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.language-switch a:hover {
+  background: #dfeedd;
+}
+
+/* Better support for English and German pages */
+html[dir="ltr"] body {
+  direction: ltr;
+}
+
+html[dir="ltr"] .navbar {
+  direction: ltr;
+}
+
+html[dir="ltr"] .about-section,
+html[dir="ltr"] .rules-section {
+  text-align: left;
+}
+
+html[dir="ltr"] .about-text h2,
+html[dir="ltr"] .about-text p,
+html[dir="ltr"] .rules-text h2,
+html[dir="ltr"] .rules-text p {
+  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+html[dir="ltr"] .about-text h2::after,
+html[dir="ltr"] .rules-text h2::after {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+html[dir="ltr"] .mission-card {
+  text-align: left;
+}
+
+@media (max-width: 800px) {
+  .language-switch {
+    margin-right: 0;
+    margin-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+}
